@@ -28,5 +28,26 @@ namespace Exercise___CRUD_WIndows_Form
             this.araiTableAdapter.Fill(this.helmDataSet.Arai);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 fm2 = new Form2();
+            fm2.Show();
+
+            con.Open();
+            SqlCommand com = new SqlCommand("exec dbo.Arai_insert'"+int.Parse(textBox1.Text)+"','"+textBox2.Text+ "',,'" + textBox3.Text + ", con);
+
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

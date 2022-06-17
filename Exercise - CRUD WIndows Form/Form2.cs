@@ -23,5 +23,10 @@ namespace Exercise___CRUD_WIndows_Form
             this.aGVTableAdapter.Fill(this.helmDataSet.AGV);
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -49,6 +49,7 @@ namespace Exercise___CRUD_WIndows_Form
             this.idHelmAGVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.modelAGVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipeAGVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.helmDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.aGVBindingSource)).BeginInit();
@@ -56,7 +57,7 @@ namespace Exercise___CRUD_WIndows_Form
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(657, 402);
+            this.button4.Location = new System.Drawing.Point(699, 400);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 24;
@@ -65,7 +66,7 @@ namespace Exercise___CRUD_WIndows_Form
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(193, 363);
+            this.button3.Location = new System.Drawing.Point(189, 372);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 23;
@@ -74,7 +75,7 @@ namespace Exercise___CRUD_WIndows_Form
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(314, 363);
+            this.button2.Location = new System.Drawing.Point(303, 372);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 22;
@@ -99,12 +100,13 @@ namespace Exercise___CRUD_WIndows_Form
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(68, 363);
+            this.button1.Location = new System.Drawing.Point(588, 400);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 20;
-            this.button1.Text = "Create";
+            this.button1.Text = "Next";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox3
             // 
@@ -220,12 +222,22 @@ namespace Exercise___CRUD_WIndows_Form
             this.tipeAGVDataGridViewTextBoxColumn.Name = "tipeAGVDataGridViewTextBoxColumn";
             this.tipeAGVDataGridViewTextBoxColumn.Width = 125;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(78, 372);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 26;
+            this.button5.Text = "Create";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -270,5 +282,6 @@ namespace Exercise___CRUD_WIndows_Form
         private System.Windows.Forms.DataGridViewTextBoxColumn idHelmAGVDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn modelAGVDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipeAGVDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button5;
     }
 }

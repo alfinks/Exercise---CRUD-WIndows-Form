@@ -50,6 +50,7 @@ namespace Exercise___CRUD_WIndows_Form
             this.modelAraiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipeAraiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.helmDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.helmDataSetBindingSource)).BeginInit();
@@ -100,13 +101,16 @@ namespace Exercise___CRUD_WIndows_Form
             // 
             // textBox1
             // 
+            this.textBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.helmDataSet, "Arai.id_Helm_Arai", true));
             this.textBox1.Location = new System.Drawing.Point(227, 144);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(149, 22);
             this.textBox1.TabIndex = 4;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
+            this.textBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.araiBindingSource, "Model_Arai", true));
             this.textBox2.Location = new System.Drawing.Point(227, 186);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(149, 22);
@@ -114,6 +118,7 @@ namespace Exercise___CRUD_WIndows_Form
             // 
             // textBox3
             // 
+            this.textBox3.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.araiBindingSource, "Tipe_Arai", true));
             this.textBox3.Location = new System.Drawing.Point(227, 226);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(149, 22);
@@ -121,12 +126,13 @@ namespace Exercise___CRUD_WIndows_Form
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(90, 356);
+            this.button1.Location = new System.Drawing.Point(554, 385);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 7;
-            this.button1.Text = "Create";
+            this.button1.Text = "Next";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // dataGridView1
             // 
@@ -225,12 +231,23 @@ namespace Exercise___CRUD_WIndows_Form
             this.label5.TabIndex = 26;
             this.label5.Text = "Arai";
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(99, 356);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 27;
+            this.button5.Text = "Create";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -278,6 +295,7 @@ namespace Exercise___CRUD_WIndows_Form
         private System.Windows.Forms.DataGridViewTextBoxColumn modelAraiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tipeAraiDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button5;
     }
 }
 
